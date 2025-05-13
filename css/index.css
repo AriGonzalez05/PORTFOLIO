@@ -69,6 +69,11 @@ main {
   top: 390px;
   left: 500px;
 }
+
+.proyecto-6 {
+  top: 100px;
+  left: 400px;
+}
 .proyecto img {
   border: 1px solid rgb(0, 0, 0);
 }
@@ -102,5 +107,9 @@ main {
 }
 
 .img-5 {
+  width: 280px;
+}
+
+.img-6 {
   width: 280px;
 }

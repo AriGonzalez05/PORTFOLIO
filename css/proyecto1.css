@@ -40,14 +40,14 @@ nav a {
 .imagen-titulo {
   position: absolute;
   top: 20px;
-  right: 40px;
-  width: 200px; /* Ajusta según tu imagen */
+  right: 80px;
+  width: 700px; /* Ajusta según tu imagen */
 }
 
 /* Contenido en dos columnas */
 .contenido {
   display: flex;
-  margin-top: 150px; /* espacio debajo de la imagen-título */
+  margin-top: 50px; /* espacio debajo de la imagen-título */
   gap: 60px;
 }
 
@@ -60,16 +60,15 @@ nav a {
 
 /* Imagen 1 personalizada */
 .imagen-1 {
-  width: 300px;
+  width: 600px;
   height: auto;
   top: 670px;
-  left: 270px;
   border: 1px solid rgb(0, 0, 0);
 }
 
 /* Imagen 2 personalizada */
 .imagen-2 {
-  width: 300px;
+  width: 600px;
   height: auto;
   top: 670px;
   left: 270px;
@@ -77,15 +76,15 @@ nav a {
 }
 
 /* Texto explicativo */
+/* Texto posicionado manualmente */
 .texto-derecha {
-  flex: 1;
+  position: absolute;
+  top: 200px; /* ⇦ aquí eliges la altura exacta */
+  left: 750px; /* ⇦ aquí eliges qué tan a la derecha va */
+  max-width: 680px;
 }
-
-.texto-derecha h2 {
-  margin-bottom: 10px;
-}
-
+/* Ajusta si quieres que esté más a la derecha */
 .texto-derecha p {
   font-size: 1em;
-  line-height: 1.6;
+  line-height: 1.4;
 }
