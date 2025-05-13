@@ -29,3 +29,12 @@ nav a {
   color: black;
   font-weight: 500;
 }
+.texto-explicativo {
+  margin-top: 60px; /* Distancia desde el vídeo (arriba) */
+  margin-left: 80px; /* Distancia desde el lado izquierdo */
+  margin-right: 80px; /* (Opcional) margen derecho si quieres simetría */
+  padding: 20px; /* Espacio interno del bloque de texto */
+  max-width: 800px; /* Limita el ancho del texto para que no sea muy ancho */
+  font-size: 1em;
+  line-height: 1.6;
+}
