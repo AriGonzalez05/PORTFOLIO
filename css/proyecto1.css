@@ -1,0 +1,91 @@
+/* Quitamos márgenes y paddings por defecto */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ESTILO DEL ENCABEZADO */
+header {
+  width: 100%;
+  padding: 30px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white; /* Igual que el fondo */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+/* Contenedor principal */
+.contenedor-proyecto {
+  padding: 40px;
+  position: relative;
+}
+
+/* Imagen del título (arriba a la derecha) */
+.imagen-titulo {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  width: 200px; /* Ajusta según tu imagen */
+}
+
+/* Contenido en dos columnas */
+.contenido {
+  display: flex;
+  margin-top: 150px; /* espacio debajo de la imagen-título */
+  gap: 60px;
+}
+
+/* Columna izquierda con las dos imágenes */
+.imagenes-izquierda {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* Imagen 1 personalizada */
+.imagen-1 {
+  width: 300px;
+  height: auto;
+  top: 670px;
+  left: 270px;
+  border: 1px solid rgb(0, 0, 0);
+}
+
+/* Imagen 2 personalizada */
+.imagen-2 {
+  width: 300px;
+  height: auto;
+  top: 670px;
+  left: 270px;
+  border: 1px solid rgb(0, 0, 0);
+}
+
+/* Texto explicativo */
+.texto-derecha {
+  flex: 1;
+}
+
+.texto-derecha h2 {
+  margin-bottom: 10px;
+}
+
+.texto-derecha p {
+  font-size: 1em;
+  line-height: 1.6;
+}
