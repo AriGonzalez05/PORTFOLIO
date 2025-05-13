@@ -1,0 +1,106 @@
+/* Quitamos márgenes y paddings por defecto */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ESTILO DEL ENCABEZADO */
+header {
+  width: 100%;
+  padding: 30px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white; /* Igual que el fondo */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+/* CONTENIDO PRINCIPAL */
+main {
+  position: relative;
+  height: 100vh;
+  background-color: white;
+  padding: 40px;
+}
+
+/* PROYECTOS "FLOTANDO" */
+.proyecto {
+  position: absolute;
+  /* No pongas text-align aquí */
+}
+
+.proyecto:hover {
+  transform: scale(1.15);
+  transition: all 0.3s ease-in-out;
+}
+
+.proyecto-1 {
+  top: 160px;
+  left: 150px;
+}
+.proyecto-2 {
+  top: 50px;
+  left: 650px;
+}
+.proyecto-3 {
+  top: 180px;
+  left: 1180px;
+}
+.proyecto-4 {
+  top: 670px;
+  left: 270px;
+}
+.proyecto-5 {
+  top: 390px;
+  left: 500px;
+}
+.proyecto img {
+  border: 1px solid rgb(0, 0, 0);
+}
+
+.etiqueta {
+  display: block;
+  width: fit-content;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border: 1px solid rgb(0, 0, 0);
+  padding: 4px 10px;
+  font-size: 0.8em;
+  margin-top: 8px;
+  text-align: center; /* centrado del texto DENTRO de la caja */
+}
+
+.img-1 {
+  width: 230px;
+}
+
+.img-2 {
+  width: 280px;
+}
+
+.img-3 {
+  width: 180px;
+}
+
+.img-4 {
+  width: 230px;
+}
+
+.img-5 {
+  width: 280px;
+}

@@ -1,0 +1,11 @@
+:root {
+  --color-principal: #000000;
+  --color-secundario: #ffffff;
+  --fuente-general: "Arial", sans-serif;
+}
+
+body {
+  font-family: var(--fuente-general);
+  background-color: var(--color-secundario);
+  color: var(--color-principal);
+}
