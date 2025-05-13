@@ -58,21 +58,26 @@ main {
   left: 650px;
 }
 .proyecto-3 {
-  top: 180px;
-  left: 1180px;
-}
-.proyecto-4 {
-  top: 670px;
-  left: 270px;
-}
-.proyecto-5 {
   top: 390px;
   left: 500px;
 }
+.proyecto-4 {
+  top: 500px;
+  left: 900px;
+}
+.proyecto-5 {
+  top: 780px;
+  left: 800px;
+}
+
+.proyecto-6 {
+  top: 670px;
+  left: 270px;
+}
 
 .proyecto-7 {
-  top: 100px;
-  left: 400px;
+  top: 180px;
+  left: 1100px;
 }
 .proyecto img {
   border: 1px solid rgb(0, 0, 0);
@@ -108,6 +113,10 @@ main {
 
 .img-5 {
   width: 280px;
+}
+
+.img-6 {
+  width: 180px;
 }
 
 .img-7 {
