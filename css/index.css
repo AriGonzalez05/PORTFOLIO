@@ -52,32 +52,46 @@ main {
 .proyecto-1 {
   top: 160px;
   left: 150px;
+  animation: flotando 2s ease-in-out infinite;
+  animation-delay: 0s;
 }
 .proyecto-2 {
   top: 50px;
   left: 650px;
+  animation: flotando 2s ease-in-out infinite;
+  animation-delay: 1.2s;
 }
 .proyecto-3 {
   top: 390px;
   left: 500px;
+  animation: flotando 2s ease-in-out infinite;
+  animation-delay: 1s;
 }
 .proyecto-4 {
   top: 500px;
   left: 900px;
+  animation: flotando 2s ease-in-out infinite;
+  animation-delay: 0.8s;
 }
 .proyecto-5 {
   top: 780px;
   left: 800px;
+  animation: flotando 2s ease-in-out infinite;
+  animation-delay: 2.5s;
 }
 
 .proyecto-6 {
   top: 670px;
   left: 270px;
+  animation: flotando 2s ease-in-out infinite;
+  animation-delay: 1.7s;
 }
 
 .proyecto-7 {
   top: 180px;
   left: 1100px;
+  animation: flotando 2s ease-in-out infinite;
+  animation-delay: 3s;
 }
 .proyecto img {
   border: 1px solid rgb(0, 0, 0);
@@ -121,4 +135,22 @@ main {
 
 .img-7 {
   width: 280px;
+}
+
+/* Animación de flotación */
+@keyframes flotando {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px); /* Ajusta la intensidad del "bote" */
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* Aplica la animación a cada proyecto */
+.proyecto {
+  position: absolute;
 }

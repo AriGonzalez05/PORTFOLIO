@@ -29,12 +29,30 @@ nav a {
   color: black;
   font-weight: 500;
 }
+.bloque-contenido {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Importante para que no se centren verticalmente */
+  gap: 40px; /* Espacio entre texto e imagen */
+  margin-top: 60px;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
 .texto-explicativo {
-  margin-top: 60px; /* Distancia desde el vídeo (arriba) */
-  margin-left: 80px; /* Distancia desde el lado izquierdo */
+  margin-top: 30px; /* Distancia desde el vídeo (arriba) */
+  margin-left: 60px; /* Distancia desde el lado izquierdo */
   margin-right: 80px; /* (Opcional) margen derecho si quieres simetría */
   padding: 20px; /* Espacio interno del bloque de texto */
   max-width: 800px; /* Limita el ancho del texto para que no sea muy ancho */
   font-size: 1em;
   line-height: 1.6;
+}
+
+.imagen-lateral img {
+  width: 300px; /* Ajusta como quieras */
+  height: auto;
+  margin-top: 30px; /* Distancia desde el vídeo (arriba) */
+  margin-left: 60px; /* Distancia desde el lado izquierdo */
+  margin-right: 80px; /* (Opcional) margen derecho si quieres simetría */
 }
