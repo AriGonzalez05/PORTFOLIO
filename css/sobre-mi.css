@@ -37,6 +37,8 @@ nav a {
   gap: 40px;
   padding: 60px 40px;
   background-color: white;
+  /* Reducir padding superior para subir el contenido */
+  padding-top: 40px;
 }
 
 /* Columna izquierda con textos e imágenes */
@@ -51,6 +53,8 @@ nav a {
   font-size: 1em;
   line-height: 1.6;
   color: #333;
+  /* Subir el primer texto añadiendo un margin-top negativo */
+  margin-top: 20;
 }
 
 .bloque-texto h2 {
@@ -62,6 +66,8 @@ nav a {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
+  /* Subir las imágenes ajustando el padding-top */
+  padding-top: 10px;
 }
 
 .bloque-imagenes img {

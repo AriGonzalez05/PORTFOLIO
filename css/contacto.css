@@ -1,0 +1,143 @@
+/* Quitamos márgenes y paddings por defecto */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ESTILO DEL ENCABEZADO */
+header {
+  width: 100%;
+  padding: 30px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white; /* Igual que el fondo */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+main {
+  display: block;
+  background-color: white;
+  min-height: calc(100vh - 120px);
+  padding: 40px 20px;
+}
+.form-container {
+  border: 1px solid black;
+  background-color: white;
+  padding: 40px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #aaa;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  margin-top: 20px;
+  padding: 12px;
+  border: none;
+  background-color: black;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #333;
+}
+
+/* === NUEVO: Diseño de contacto con info-box === */
+.contact-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 40px;
+  flex-wrap: wrap;
+}
+
+.info-box {
+  border: 1px solid black;
+  background-color: white;
+  padding: 30px;
+  width: 280px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.info-box h3 {
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+}
+
+.info-box p,
+.info-box li {
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+}
+
+.info-box ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.info-box a {
+  text-decoration: none;
+  color: black;
+}
+
+.info-box a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive: apila los bloques en móviles */
+@media (max-width: 768px) {
+  .contact-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info-box,
+  .form-container {
+    width: 100%;
+    max-width: 500px;
+  }
+}

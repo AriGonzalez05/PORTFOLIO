@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Error 404</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: white;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        position: relative;
+        font-family: "Arial Black", sans-serif;
+      }
+
+      .glitch-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 8rem;
+        font-weight: bold;
+        color: black;
+        z-index: 20;
+        animation: glitch 1s infinite;
+        text-shadow: 2px 0 red, -2px 0 cyan;
+      }
+
+      @keyframes glitch {
+        0% {
+          transform: translate(-50%, -50%);
+        }
+        20% {
+          transform: translate(-49%, -52%) skew(2deg);
+        }
+        40% {
+          transform: translate(-52%, -49%) skew(-2deg);
+        }
+        60% {
+          transform: translate(-51%, -51%) skew(1deg);
+        }
+        80% {
+          transform: translate(-50%, -50%) skew(0deg);
+        }
+        100% {
+          transform: translate(-50%, -50%);
+        }
+      }
+
+      .rect {
+        position: absolute;
+        border: 1px solid black;
+        background: transparent;
+        opacity: 0.4;
+        animation: float 8s infinite ease-in-out;
+      }
+
+      @keyframes float {
+        0% {
+          transform: translate(0, 0) rotate(0deg);
+        }
+        100% {
+          transform: translate(5px, -5px) rotate(0.5deg);
+        }
+      }
+
+      /* Generar montones de rectángulos con posiciones y tamaños aleatorios */
+      /* Puedes duplicar estos para aumentar el caos visual */
+
+      /* Ejemplo generado automáticamente */
+    </style>
+  </head>
+  <body>
+    <div class="glitch-text">404<br />Error</div>
+
+    <!-- Generación de muchos rectángulos -->
+    <script>
+      const NUM_RECTANGLES = 40;
+      for (let i = 0; i < NUM_RECTANGLES; i++) {
+        const rect = document.createElement("div");
+        rect.className = "rect";
+
+        // Tamaños aleatorios
+        const width = Math.floor(Math.random() * 300) + 50;
+        const height = Math.floor(Math.random() * 300) + 50;
+
+        // Posiciones aleatorias
+        const top = Math.floor(Math.random() * 100);
+        const left = Math.floor(Math.random() * 100);
+
+        // Asignar estilos
+        rect.style.width = `${width}px`;
+        rect.style.height = `${height}px`;
+        rect.style.top = `${top}vh`;
+        rect.style.left = `${left}vw`;
+
+        document.body.appendChild(rect);
+      }
+    </script>
+  </body>
+</html>
