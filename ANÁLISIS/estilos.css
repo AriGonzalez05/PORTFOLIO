@@ -1,0 +1,139 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 2rem;
+  background-color: #000000;
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  color: #ffffff;
+}
+
+h2 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 1.25rem;
+  color: #ffffff;
+}
+.analisis {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.analisis h2 {
+  margin-top: 0;
+  color: #071528;
+}
+
+.imagenes {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin: 1rem 0;
+}
+
+.imagenes img {
+  width: 100%;
+  max-width: 330px;
+  border-radius: 16px;
+}
+
+.analisis {
+  display: flex;
+  flex-direction: column; /* Alinea los elementos verticalmente */
+  align-items: center; /* Centra los elementos en el eje horizontal */
+  text-align: center; /* Alinea el texto dentro del botón */
+}
+
+.analisis a {
+  display: inline-block;
+  margin-top: 1rem;
+  background: #000000;
+  color: rgb(255, 255, 255);
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.analisis a:hover {
+  background: #dfdfdf;
+  color: #000000;
+}
+
+footer {
+  margin-top: 3rem;
+  padding: 1rem;
+  text-align: center;
+  background-color: #f0f0f0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+footer a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  color: #555;
+  text-decoration: underline;
+}
+
+/* Carrusel */
+.slider {
+  overflow: hidden;
+  background: #ffffff;
+  padding: 1rem 0;
+  margin-bottom: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.slider-track {
+  display: flex;
+  width: calc(200% + 2rem);
+  animation: scroll 20s linear infinite;
+  align-items: center;
+  gap: 1.5rem;
+  font-size: 1.2rem;
+  white-space: nowrap;
+}
+
+.slider-track span {
+  font-weight: bold;
+}
+
+.star {
+  width: 10px;
+  height: 10px;
+  background: rgb(0, 0, 0);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
