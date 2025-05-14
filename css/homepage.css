@@ -18,9 +18,11 @@ header {
   z-index: 1000;
 }
 
-.logo {
+.logo a {
+  text-decoration: none;
+  color: black;
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 1.2rem;
 }
 
 nav a {
@@ -28,4 +30,15 @@ nav a {
   text-decoration: none;
   color: black;
   font-weight: 500;
+}
+
+.contenedor .imagen-central {
+  position: absolute;
+  top: 200px; /* Ajusta esto como quieras */
+  left: 510px; /* Y esto también */
+}
+
+.imagen-central img {
+  width: 500px; /* Cambia el tamaño aquí si quieres */
+  height: auto;
 }
