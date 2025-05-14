@@ -18,11 +18,12 @@ header {
   z-index: 1000;
 }
 
-.logo {
+.logo a {
+  text-decoration: none;
+  color: black;
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 1.2rem;
 }
-
 nav a {
   margin-left: 20px;
   text-decoration: none;

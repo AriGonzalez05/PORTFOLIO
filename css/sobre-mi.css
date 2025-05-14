@@ -18,9 +18,11 @@ header {
   z-index: 1000;
 }
 
-.logo {
+.logo a {
+  text-decoration: none;
+  color: black;
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 1.2rem;
 }
 
 nav a {
@@ -63,6 +65,8 @@ nav a {
 }
 
 .bloque-imagenes img {
-  width: 180px;
-  border: 1px solid #000;
+  width: 180px; /* Ancho fijo */
+  height: 180px; /* Altura fija para que todas sean del mismo tamaño */
+  object-fit: cover; /* Hace que la imagen se ajuste al tamaño, recortando si es necesario */
+  border: 1px solid #000; /* Borde opcional */
 }
